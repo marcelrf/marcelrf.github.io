@@ -1,0 +1,80 @@
+
+/*** Style for desktop ********************************************************/
+
+footer {
+    background-color: #383844;
+    width: 100%;
+}
+
+footer .centered-container {
+    height: 120px;
+    padding: 56px 0;
+    color: #fff;
+}
+
+footer h2 {
+    font-family: 'Carter one', cursive;
+    font-size: 18px;
+    color: #eee;
+}
+
+footer a {
+    color: #eee;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+footer a:hover {
+    color: #aaa;
+}
+
+footer ul {
+    padding-left: 16px;
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 12px 0;
+}
+
+footer .logo-text {
+    width: 100px;
+    margin: 20px auto;
+}
+
+footer .logo-text img {
+    width: 100px
+}
+
+footer .footer-section {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 638px) {
+
+    footer .centered-container {
+        width: 100%;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 638px) {
+
+    footer .centered-container {
+        width: 100%;
+    }
+
+    footer .centered-container {
+        height: 360px;
+    }
+
+}

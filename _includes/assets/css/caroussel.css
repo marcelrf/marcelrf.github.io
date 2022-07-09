@@ -1,0 +1,92 @@
+
+/*** Style for desktop ********************************************************/
+
+.slide {
+    margin: 20px;
+    background-position: center;
+    background-size: auto 100%;
+    height:700px;
+    border-radius: 25px;
+}
+
+.slider-container {
+    padding-bottom: 1px;
+}
+
+.slide-text {
+    margin: 307px 0 0 0;
+    width: 440px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Carter One', cursive;
+    padding: 20px;
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 720px) {
+
+  .slide {
+      height: 590px;
+  }
+
+  .slide-text {
+      width: 370px;
+  }
+
+  .slide-text {
+      margin: 256px 0 0 0;
+      height: 55px;
+      font-size: 21px;
+      line-height: 28px;
+  }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    .slide {
+        height: 480px;
+    }
+
+    .slide-text {
+        width: 300px;
+    }
+
+    .slide-text {
+        margin: 205px 0 0 0;
+        height: 50px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+}
+
+
+/*** Style for small mobile ***/
+
+@media screen and (max-width: 376px) {
+
+    .slide {
+        height: 400px;
+    }
+
+    .slide-text {
+        width: 240px;
+    }
+
+    .slide-text {
+        margin: 175px 0 0 0;
+        height: 42px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+}

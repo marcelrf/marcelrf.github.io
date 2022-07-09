@@ -1,0 +1,166 @@
+
+/*** Style for desktop ********************************************************/
+
+.menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #70a;
+    z-index: 1000;
+    box-shadow: 0 0 16px rgb(0, 0, 0, 0.4);
+    font-family: 'Carter One', cursive;
+}
+
+.menu .karenza-logo {
+    height: 32px;
+    margin-top: 21px;
+}
+
+.menu .desktop {
+    display: inherit;
+}
+
+.menu .mobile {
+    display: none;
+}
+
+.menu .pure-menu-list {
+    float: right;
+}
+
+.menu .pure-menu-link {
+    height: 64px;
+    line-height: 72px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu .pure-menu-children .pure-menu-link {
+    height: 32px;
+    line-height: 32px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu .pure-menu-children .pure-menu-item {
+    background-color: #70a;
+}
+
+.menu .pure-menu-children .pure-menu-disabled {
+    pointer-events: none;
+}
+
+.menu .pure-menu-link:focus {
+    background-color: #70a;
+}
+
+.menu .pure-menu-link:hover  {
+    background-color: #81b;
+}
+
+.menu .menu-buy-button {
+    color: #fe0;
+}
+
+/* .menu .menu-buy-button span {
+    border-color: #fe0;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    padding: 3px 10px 2px 10px;
+} */
+
+.menu .language-icon, .menu .hamburger-icon {
+    height: 25px;
+    width: 25px;
+    margin-bottom: -6px;
+}
+
+#menu-spacer {
+    margin-bottom: 82px;
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 720px) {
+
+    .menu .centered-container {
+        width: 100%;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+.menu .mobile .pure-menu-children {
+    position: fixed !important;
+    left: 0;
+    width: 100%;
+    padding-bottom: 1000px;
+    background-color: #81b;
+    padding-top: 10px;
+}
+
+.menu .mobile .pure-menu-children .pure-menu-item {
+    margin-top: 10px;
+    background-color: #81b;
+}
+
+.menu .mobile .karenza-logo {
+    margin-top: 17px;
+}
+
+.menu .mobile .pure-menu-children .pure-menu-link {
+    line-height: 16px !important;
+    height: 16px !important;
+    font-family: 'Carter One', cursive;
+    padding-left: 23px;
+}
+
+.menu .mobile .pure-menu-children .pure-menu-link.indented {
+    padding-left: 70px;
+    padding-top: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu .mobile .pure-menu-children .pure-menu-disabled {
+    opacity: 0.5;
+    padding-left: 23px;
+    color: #fff;
+}
+
+.menu .mobile .pure-menu-list .pure-menu-link::after {
+    display: none;
+}
+
+@media screen and (max-width: 637px) {
+
+    .menu .centered-container {
+        width: 100%;
+    }
+
+    .menu .desktop {
+        display: none;
+    }
+    .menu .mobile {
+        display: inherit;
+    }
+
+    .menu .pure-menu-link {
+        height: 56px;
+        line-height: 64px;
+        font-size: 16px;
+    }
+
+    .menu .language-icon, .menu .hamburger-icon {
+        height: 35px;
+        width: 35px;
+        margin-bottom: -12px;
+    }
+
+    #menu-spacer {
+        margin-bottom: 72px;
+    }
+
+}

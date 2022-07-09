@@ -1,0 +1,128 @@
+<div class="menu">
+    <div class="desktop centered-container">
+        <div class="pure-menu pure-menu-horizontal">
+            <a href="/{{ include.language }}/index.html" class="pure-menu-heading pure-menu-link">
+                <img class="karenza-logo" src="/assets/images/karenza_logo.png"/>
+            </a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a class="pure-menu-link menu-buy-button">
+                        <span>{{ include.text_buy_now }}</span>
+                    </a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="https://www.thegamecrafter.com/games/karenza-michi-eka" target="_blank" class="pure-menu-link">
+                                Michi & Eka
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="" target="_blank" class="pure-menu-link pure-menu-disabled">
+                                Padma & Kitty
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a class="pure-menu-link">
+                        <span>{{ include.text_rules }}</span>
+                    </a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/assets/KarenzaRulebook.pdf" class="pure-menu-link" download>
+                                {{ include.text_download_rulebook }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/errata.html" class="pure-menu-link">
+                                {{ include.text_errata }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover language-dropdown">
+                    <a class="pure-menu-link">
+                        <img class="language-icon" src="/assets/images/icons/icon128px-exported-black.png"/>
+                        {{ include.text_language }}
+                    </a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'en' %}#{% else %}/en/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link{% if include.language == 'en' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('en')">
+                                en - English
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'es' %}#{% else %}/es/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link{% if include.language == 'es' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('es')">
+                                es - Español
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile centered-container">
+        <div class="pure-menu pure-menu-horizontal">
+            <a href="/{{ include.language }}/index.html" class="pure-menu-heading pure-menu-link">
+                <img class="karenza-logo" src="/assets/images/karenza_logo.png"/>
+            </a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" class="pure-menu-link">
+                        <img class="hamburger-icon" src="/assets/images/icons/hamburger.png"/>
+                    </a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item pure-menu-disabled menu-buy-button">
+                            {{ include.text_buy_now }} ▼
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link indented" href="https://www.thegamecrafter.com/games/karenza-michi-eka" target="_blank">
+                                Michi & Eka
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link indented pure-menu-disabled" href="" target="_blank">
+                                Padma & Kitty
+                            </a>
+                        </li>
+                        <li class="pure-menu-item pure-menu-disabled menu-buy-button">
+                            {{ include.text_rules }} ▼
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link indented" href="/assets/KarenzaRulebook.pdf" download>
+                                {{ include.text_download_rulebook }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link indented" href="/{{ include.language }}/errata.html">
+                                {{ include.text_errata }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item pure-menu-disabled">
+                            {{ include.text_language }}
+                            <img class="language-icon" src="/assets/images/icons/icon128px-exported-black.png"/> ▼
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'en' %}#{% else %}/en/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link indented{% if include.language == 'en' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('en')">
+                                en - English
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'es' %}#{% else %}/es/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link indented{% if include.language == 'es' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('es')">
+                                es - Español
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="menu-spacer"></div>

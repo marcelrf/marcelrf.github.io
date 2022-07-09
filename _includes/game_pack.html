@@ -1,0 +1,44 @@
+<div class="game-pack-{{ include.game_pack_id }}">
+    <div class="game-pack-name">
+        <h2>{{ include.text_character_1 }} & {{ include.text_character_2 }}</h2>
+    </div>
+    <div class="pc-tab">
+        <input checked="checked" id="tab1-{{ include.game_pack_id }}" type="radio" name="pct-{{ include.game_pack_id }}" />
+        <input id="tab2-{{ include.game_pack_id }}" type="radio" name="pct-{{ include.game_pack_id }}" />
+        <input id="tab3-{{ include.game_pack_id }}" type="radio" name="pct-{{ include.game_pack_id }}" />
+        <nav>
+            <ul>
+                <li class="tab1-{{ include.game_pack_id }}">
+                    <label for="tab1-{{ include.game_pack_id }}">Pack</label>
+                </li>
+                <li class="tab2-{{ include.game_pack_id }}">
+                    <label for="tab2-{{ include.game_pack_id }}">{{ include.text_character_1 }}</label>
+                </li>
+                <li class="tab3-{{ include.game_pack_id }}">
+                    <label for="tab3-{{ include.game_pack_id }}">{{ include.text_character_2 }}</label>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="tab1-{{ include.game_pack_id }}">
+                <img src="{{ include.image_box }}"/>
+            </div>
+            <div class="tab2-{{ include.game_pack_id }}">
+                <img src="{{ include.image_character_1 }}"/>
+            </div>
+            <div class="tab3-{{ include.game_pack_id }}">
+                <img src="{{ include.image_character_2 }}"/>
+            </div>
+        </section>
+    </div>
+    <div class="game-pack-buy">
+        <div class="game-pack-buy-centered">
+            <a class="pure-button{% if include.text_shop_url == '' %} pure-button-disabled{% endif %}"
+                href="{{ include.text_shop_url }}"
+                style="color:{% if include.text_shop_url == '' %}#879{% else %}#70a{% endif %};background-color:{% if include.text_shop_url == '' %}#eda{% else %}#fb0{% endif %}"
+                target="_blank">
+                {{ include.text_buy_now }}
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,318 @@
+
+/*** Style for desktop ********************************************************/
+
+.wide-container {
+    width: 100%;
+}
+
+.centered-container {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.wide-container .title {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+    color: #70a;
+}
+
+.text-over-image-block {
+    /* background-position: center left;
+    background-size: auto 140%;
+    background-repeat: no-repeat; */
+    line-height: 31px;
+    text-align: justify;
+}
+
+.requirements {
+    width: 440px;
+    margin: 5px auto 0 auto;
+    opacity: 0.7;
+}
+
+.requirements img {
+    width: 440px;
+    margin: 20px 0;
+}
+
+/* .text-over-image-block.reverse {
+    background-position: top right;
+    background-size: 50% auto;
+} */
+
+.text-over-image-block .wide-container {
+    padding: 56px 0 56px 0;
+}
+
+.text-over-image-block .high {
+    font-family: 'Carter One', cursive;
+    font-size: 20px;
+}
+
+.text-over-image-block p {
+    color: #333;
+    padding: 16px;
+    font-size: 22px;
+    margin: 0;
+}
+
+.caroussel-container {
+    width: 520px;
+    height: 770px;
+    margin: 0 auto;
+}
+
+.two-column-colored-block.wide-container {
+    padding: 70px 0 70px 0;
+    background-color: #52c3b1;
+}
+
+.two-column-colored-block.wide-container .title {
+    color: #fff;
+}
+
+.two-column-colored-block .game-pack {
+    margin: 0 auto;
+}
+
+.wide-only {
+    display: inherit;
+}
+.narrow-only {
+    display: none;
+}
+
+
+/*** When purecss grid blocks change layout at LG *****************************/
+
+@media screen and (max-width: 1150px) {
+
+    .text-over-image-block .wide-container {
+        padding: 32px 0 32px 0;
+    }
+
+    .wide-only {
+        display: none;
+    }
+    .narrow-only {
+        display: inherit;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 863.9px) {
+
+    /* .text-over-image-block {
+        background-position: top left;
+        background-size: 100% auto;
+    }
+
+    .text-over-image-block.reverse {
+        background-position: top right;
+        background-size: 100% auto;
+    }
+
+    .text-over-image-block .wide-container,
+    .text-over-image-block.reverse .wide-container {
+        padding: 0 0 16px 0;
+    }
+
+    .text-over-image-block p {
+        margin: 400px 0 0 0;
+    } */
+
+    .two-column-colored-block.wide-container .centered-container {
+        width: 360px;
+    }
+
+    .two-column-colored-block.wide-container .pure-u-md-1-2:not(:last-child) {
+        margin-bottom: 64px;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at SM *****************************/
+
+@media screen and (max-width: 639.9px) {
+
+    /* .text-over-image-block {
+        background-position: top left;
+        background-size: auto 100%;
+    }
+
+    .text-over-image-block.reverse {
+        background-position: top right;
+        background-size: 100% auto;
+    }
+
+    .two-column-colored-block .pure-1 {
+        text-align: center;
+    }
+
+    .two-column-colored-block .colored-block-button {
+        margin: 0 0 48px 0;
+    }
+
+    .two-column-colored-block p {
+        padding: 4px 16px 16px 16px;
+    } */
+
+}
+
+
+/*** Style for COW ************************************************************/
+
+@media screen and (max-width: 1340px) and (min-width: 864px) {
+
+    /* .text-over-image-block.reverse {
+        background-position: top right;
+        background-size: auto 100%;
+    } */
+
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 720px) {
+
+    .centered-container {
+        width: 100%;
+    }
+
+    .caroussel-container {
+        width: 450px;
+        height: 670px;
+    }
+
+    .requirements {
+        width: 395px;
+    }
+
+    .requirements img {
+        width: 395px;
+        margin: 17px 0;
+    }
+
+    /* .text-over-image-block p {
+        font-size: 20px;
+    }
+
+    .two-column-colored-block p {
+        font-size: 20px;
+    }
+
+    .two-column-colored-block.wide-container {
+        padding: 48px 0 16px 0;
+    } */
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    .text-over-image-block .wide-container {
+        padding: 42px 0 42px 0;
+    }
+
+    .centered-container {
+        width: 100%;
+    }
+
+    .caroussel-container {
+        width: 380px;
+        height: 570px;
+    }
+
+    .requirements {
+        width: 350px;
+    }
+
+    .requirements img {
+        width: 350px;
+        margin: 15px 0;
+    }
+
+    .text-over-image-block p {
+        font-size: 20px;
+    }
+
+    .text-over-image-block .high {
+        font-size: 18px;
+    }
+
+    /* .two-column-colored-block p {
+        font-size: 18px;
+    }
+
+    .text-over-image-block .buttons {
+        padding-left: 16px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .two-column-colored-block.wide-container {
+        padding: 48px 0 8px 0;
+    }
+
+    .text-over-image-block.reverse {
+        background-position: top right;
+        background-size: auto 65%;
+    } */
+
+}
+
+
+/*** Style for small mobile game packs ***/
+
+@media screen and (max-width: 376px) {
+
+    .two-column-colored-block.wide-container .centered-container {
+        width: 240px;
+    }
+
+}
+
+
+/*** Style for small mobile ***/
+
+@media screen and (max-width: 376px) {
+
+    .text-over-image-block .wide-container {
+        padding: 32px 0 32px 0;
+    }
+
+    .caroussel-container {
+        width: 320px;
+        height: 480px;
+    }
+
+    .requirements {
+        width: 280px;
+    }
+
+    .requirements img {
+        width: 280px;
+        margin: 10px 0;
+    }
+
+    .text-over-image-block p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .text-over-image-block .high {
+        font-size: 16px;
+    }
+
+}

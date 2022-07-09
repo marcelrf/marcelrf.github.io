@@ -1,0 +1,119 @@
+
+/*** Style for desktop ********************************************************/
+
+#welcome-block {
+    padding: 90px 0 110px 0;
+}
+
+#welcome-block .full-logo {
+    width: 600px;
+    margin: auto;
+    display: block;
+    padding-right: 20px;
+}
+
+#welcome-block .horizontal-logo {
+    display: inherit;
+}
+
+#welcome-block .vertical-logo {
+    display: none;
+}
+
+#welcome-block .punch-line {
+    background-color: #70a;
+    color: #fff;
+    margin: auto;
+    width: 240px;
+    border-radius: 25px;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+}
+
+#welcome-block h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#welcome-block h2 {
+    margin: 0 16px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+/*** When purecss grid blocks change layout at LG *****************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block {
+        padding: 60px 0 85px 0;
+    }
+
+    #welcome-block .full-logo {
+        width: 480px;
+        padding-right: 17px;
+    }
+
+    #welcome-block .horizontal-logo {
+        width: 480px;
+    }
+
+    #welcome-block .punch-line {
+        width: 200px;
+        border-radius: 22px;
+        padding: 17px 0;
+    }
+
+    #welcome-block h1 {
+        font-size: 18px;
+    }
+
+    #welcome-block h2 {
+        margin: 0 14px;
+        font-size: 13px;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    #welcome-block {
+        padding: 30px 0 60px 0;
+    }
+
+    #welcome-block .full-logo {
+        width: 250px;
+        padding-right: 0px;
+    }
+
+    #welcome-block .horizontal-logo {
+        display: none;
+    }
+
+    #welcome-block .vertical-logo {
+        display: inherit;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    #welcome-block .punch-line {
+        width: 170px;
+        border-radius: 15px;
+        padding: 12px 5px;
+    }
+
+    #welcome-block h1 {
+        font-size: 14px;
+    }
+
+    #welcome-block h2 {
+        margin: 0 10px;
+        font-size: 10px;
+    }
+
+}

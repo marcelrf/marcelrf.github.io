@@ -1,0 +1,5 @@
+title: Karenza, the sword-fighting card game
+timezone: UTC
+url: "http://karenzathegame.com"
+plugins:
+  - jekyll-sitemap

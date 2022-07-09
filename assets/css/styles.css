@@ -1,0 +1,31 @@
+---
+---
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+h1, .menu, footer a, .pure-g [class *= "pure-u"] h1 {
+    font-family: 'Carter one', cursive;
+}
+p, .pure-g [class *= "pure-u"] {
+    font-family: 'Lato', sans-serif;
+}
+html {
+  scroll-padding-top: 82px; /* height of sticky header */
+}
+
+{% include /assets/css/menu.css %}
+{% include /assets/css/footer.css %}
+{% include /assets/css/caroussel.css %}
+{% include /assets/css/welcome.css %}
+{% include /assets/css/main.css %}
+{% include /assets/css/components.css %}
+{% include /assets/css/game_pack.css game_pack_id = "me" %}
+{% include /assets/css/game_pack.css game_pack_id = "pk" %}
+{% include /assets/css/errata.css %}
+
+/* PATCHES */
+.pure-g {
+    letter-spacing: normal;
+}

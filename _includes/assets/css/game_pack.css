@@ -1,0 +1,156 @@
+.game-pack-{{ include.game_pack_id }} {
+    width: 340px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.game-pack-{{ include.game_pack_id }} .game-pack-name h2 {
+    color: #222;
+    font-family: 'Carter One', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.game-pack-{{ include.game_pack_id }} .pc-tab > input,
+.game-pack-{{ include.game_pack_id }} .pc-tab section > div {
+    display: none;
+}
+
+.game-pack-{{ include.game_pack_id }} #tab1-{{ include.game_pack_id }}:checked ~ section .tab1-{{ include.game_pack_id }},
+.game-pack-{{ include.game_pack_id }} #tab2-{{ include.game_pack_id }}:checked ~ section .tab2-{{ include.game_pack_id }},
+.game-pack-{{ include.game_pack_id }} #tab3-{{ include.game_pack_id }}:checked ~ section .tab3-{{ include.game_pack_id }} {
+    display: block;
+}
+
+.game-pack-{{ include.game_pack_id }} .pc-tab {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.game-pack-{{ include.game_pack_id }} .pc-tab ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.game-pack-{{ include.game_pack_id }} .pc-tab ul li label {
+    float: left;
+    padding: 15px 25px;
+    color: #70a;
+}
+
+.game-pack-{{ include.game_pack_id }} .pc-tab ul li label:hover {
+    background: rgb(255, 255, 255, 0.3);
+    cursor: pointer;
+    border-radius: 15px 15px 0 0;
+}
+
+.game-pack-{{ include.game_pack_id }} .pc-tab section {
+    clear: both;
+}
+
+.game-pack-{{ include.game_pack_id }} .pc-tab section div {
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 0 25px 25px 25px;
+}
+
+.game-pack-{{ include.game_pack_id }} #tab1-{{ include.game_pack_id }}:checked ~ nav .tab1-{{ include.game_pack_id }} label,
+.game-pack-{{ include.game_pack_id }} #tab2-{{ include.game_pack_id }}:checked ~ nav .tab2-{{ include.game_pack_id }} label,
+.game-pack-{{ include.game_pack_id }} #tab3-{{ include.game_pack_id }}:checked ~ nav .tab3-{{ include.game_pack_id }} label {
+    background: white;
+    position: relative;
+    cursor: auto;
+    border-radius: 15px 15px 0 0;
+    color: #000;
+}
+
+.game-pack-{{ include.game_pack_id }} .game-pack-buy {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.game-pack-{{ include.game_pack_id }} .game-pack-buy-centered {
+    margin: 0 auto;
+    width: 220px;
+}
+
+.game-pack-{{ include.game_pack_id }} .game-pack-buy .pure-button,
+.game-pack-{{ include.game_pack_id }} .game-pack-buy .pure-button-disabled {
+    width: 220px;
+    height: 65px;
+    background-color: #70a;
+    border-radius: 15px;
+    box-shadow: 3px 3px #777;
+    color: #fe0;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    font-size: 22px;
+    line-height: 45px;
+    opacity: 1;
+}
+
+.game-pack-{{ include.game_pack_id }} img {
+    width: 290px;
+}
+
+
+/*** Style for small mobile ***/
+
+@media screen and (max-width: 376.9px) {
+
+    .game-pack-{{ include.game_pack_id }} {
+        width: 240px;
+        padding: 0;
+    }
+
+    .game-pack-{{ include.game_pack_id }} .game-pack-name h2 {
+        font-size: 24px;
+    }
+
+    .game-pack-{{ include.game_pack_id }} .pc-tab ul li label {
+        padding: 10px 18px;
+    }
+
+    .game-pack-{{ include.game_pack_id }} .pc-tab ul li label:hover {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .game-pack-{{ include.game_pack_id }} .pc-tab section div {
+        padding: 13px;
+        width: 214px;
+        height: 290px;
+        border-radius: 0 18px 18px 18px;
+    }
+
+    .game-pack-{{ include.game_pack_id }} #tab1-{{ include.game_pack_id }}:checked ~ nav .tab1-{{ include.game_pack_id }} label,
+    .game-pack-{{ include.game_pack_id }} #tab2-{{ include.game_pack_id }}:checked ~ nav .tab2-{{ include.game_pack_id }} label,
+    .game-pack-{{ include.game_pack_id }} #tab3-{{ include.game_pack_id }}:checked ~ nav .tab3-{{ include.game_pack_id }} label {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .game-pack-{{ include.game_pack_id }} .game-pack-buy {
+        margin-top: -18px;
+    }
+
+    .game-pack-{{ include.game_pack_id }} .game-pack-buy-centered {
+        width: 180px;
+    }
+
+    .game-pack-{{ include.game_pack_id }} .game-pack-buy .pure-button,
+    .game-pack-{{ include.game_pack_id }} .game-pack-buy .pure-button-disabled {
+        width: 180px;
+        height: 52px;
+        border-radius: 10px;
+        font-size: 17px;
+        line-height: 36px;
+    }
+
+    .game-pack-{{ include.game_pack_id }} img {
+        width: 210px;
+    }
+
+}

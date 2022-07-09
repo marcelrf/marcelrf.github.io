@@ -1,0 +1,55 @@
+
+/*** Style for desktop ********************************************************/
+
+#main-block {
+    background-image: linear-gradient(to right, #768, #98a);
+    padding: 70px 0 90px 0;
+}
+
+#main-block h2 {
+    margin: 0 16px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+/*** When purecss grid blocks change layout at LG *****************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #main-block {
+        padding: 30px 0 70px 0;
+    }
+
+    #main-block h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    #main-block {
+        padding: 25px 0 50px 0;
+    }
+
+    #main-block h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #main-block img {
+        width: 40px;
+    }
+
+    #main-block .icon {
+        width: 40px;
+        margin-bottom: 14px;
+    }
+
+}
