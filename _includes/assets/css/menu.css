@@ -35,6 +35,14 @@
     font-size: 18px;
 }
 
+.menu .tgc-form .tgc-button {
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255, 0);
+    height: 50px !important;
+    width: 100%;
+}
+
 .menu .pure-menu-children .pure-menu-link {
     height: 32px;
     line-height: 32px;
