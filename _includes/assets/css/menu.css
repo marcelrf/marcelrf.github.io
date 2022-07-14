@@ -41,6 +41,7 @@
     background-color: rgb(255, 255, 255, 0);
     height: 50px !important;
     width: 100%;
+    text-align: left;
 }
 
 .menu .pure-menu-children .pure-menu-link {
@@ -169,6 +170,10 @@
 
     #menu-spacer {
         margin-bottom: 72px;
+    }
+
+    .menu .mobile .pure-menu-children .tgc-form .tgc-button {
+        height: 28px !important;
     }
 
 }
