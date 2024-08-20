@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <meta name="google-site-verification" content="-OoOKygZokNwttHOWo6TEU8LJpgHTtJcwRt5O2bl_ck" />
-        <script language="javascript">
-            function getCookie (name) {
-                var nameEquals = name + '=';
-                var decodedCookie = decodeURIComponent(document.cookie);
-                var pairs = decodedCookie.split(';');
-                for (var i = 0; i < pairs.length; i++) {
-                    var pair = pairs[i];
-                    while (pair.charAt(0) == ' ') {
-                        pair = pair.substring(1);
-                    }
-                    if (pair.indexOf(nameEquals) == 0) {
-                        return pair.substring(nameEquals.length, pair.length);
-                    }
-              }
-              return '';
-            }
-            function setCookie (name, value, days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                var expires = 'expires=' +  date.toUTCString();
-                document.cookie = name + '=' + value + ';' + expires + ';path=/';
-            }
-            var language = getCookie('language');
-            if (language != '') {
-                window.location = '/' + language + '/index.html';
-            } else {
-                window.location = '/en/index.html';
-            }
-        </script>
+        <meta http-equiv="refresh" content="0; URL=https://karenzathegame.com/en/index.html">
+        <link rel="canonical" href="https://karenzathegame.com/en/index.html">
     </head>
     <body></body>
 </html>
